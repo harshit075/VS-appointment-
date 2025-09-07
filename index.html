@@ -73,37 +73,78 @@
 
     <!-- Header Section -->
     <header id="header" class="header-transparent fixed top-0 left-0 right-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="font-brand text-2xl md:text-3xl font-bold text-white">Vishal The Family Salon</h1>
-            <a href="#booking" class="bg-gold text-slate-900 font-semibold px-5 py-2 rounded-lg hover:bg-opacity-90 transition duration-300 text-sm md:text-base shadow-md">Book Now</a>
+        <nav class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <h1 class="font-brand text-xl sm:text-2xl md:text-3xl font-bold text-white">Vishal The Family Salon</h1>
+            <div class="flex items-center space-x-3 sm:space-x-6">
+                 <a href="#menu" class="text-white hover:text-gold transition duration-300 text-sm md:text-base">Services</a>
+                 <a href="#booking" class="bg-gold text-slate-900 font-semibold px-4 py-2 sm:px-5 rounded-lg hover:bg-opacity-90 transition duration-300 text-sm md:text-base shadow-md">Book Now</a>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1599351548092-759151811802?q=80&w=1974&auto=format&fit=crop');">
+    <section class="bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1599351548092-759151811802?q=80&w=1974&auto:format&fit=crop');">
         <div class="h-full flex items-center justify-center bg-black bg-opacity-70">
             <div class="text-center text-white p-4">
-                <h2 class="font-brand text-5xl md:text-7xl font-extrabold tracking-tight">Elegance in Every Strand</h2>
-                <p class="mt-4 text-lg md:text-xl max-w-2xl font-light text-gray-300">Discover a space where modern style meets timeless sophistication. Your transformation awaits.</p>
-                <a href="#booking" class="mt-8 inline-block bg-gold text-slate-900 font-bold px-10 py-4 rounded-lg hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg">Book an Appointment</a>
+                <h2 class="font-brand text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight">Elegance in Every Strand</h2>
+                <p class="mt-4 text-base sm:text-lg md:text-xl max-w-2xl font-light text-gray-300">Discover a space where modern style meets timeless sophistication. Your transformation awaits.</p>
+                <a href="#booking" class="mt-8 inline-block bg-gold text-slate-900 font-bold px-8 py-3 sm:px-10 sm:py-4 rounded-lg hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg">Book an Appointment</a>
             </div>
         </div>
     </section>
 
-    <main class="container mx-auto px-6 py-16 md:py-24">
+    <main class="container mx-auto px-4 sm:px-6 py-16 md:py-24">
+
+        <!-- Services Menu Section -->
+        <section id="menu" class="mb-20 md:mb-32 reveal">
+            <h2 class="font-brand text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 text-white">Services Menu</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 max-w-5xl mx-auto">
+                <!-- For Men Column -->
+                <div class="bg-slate-800 p-6 sm:p-8 rounded-xl shadow-lg border-t-4 border-gold">
+                    <h3 class="font-brand text-2xl sm:text-3xl text-white mb-6 text-center">For Men</h3>
+                    <ul class="space-y-4 text-gray-300 text-sm sm:text-base">
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Haircut</span> <span class="font-semibold text-gold">₹150</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Haircut By Vishal Sen</span> <span class="font-semibold text-gold">₹200</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Beard Trim</span> <span class="font-semibold text-gold">₹50</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Beard Trim & Style</span> <span class="font-semibold text-gold">₹150</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Classic Shave</span> <span class="font-semibold text-gold">₹100</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Hair Clean Up</span> <span class="font-semibold text-gold">₹200</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Hair Color about</span> <span class="font-semibold text-gold">from ₹150</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Facial About to</span> <span class="font-semibold text-gold">from ₹800</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Hair Color Advance - Marix, Raga about</span> <span class="font-semibold text-gold">from ₹250 - ₹350</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Hair highlight</span> <span class="font-semibold text-gold">₹350</span></li>
+                        <li class="flex justify-between pb-2"><span>Groom Package(Best)</span> <span class="font-semibold text-gold">from about ₹10000</span></li>
+                    </ul>
+                </div>
+
+                <!-- For Women Column -->
+                <div class="bg-slate-800 p-6 sm:p-8 rounded-xl shadow-lg border-t-4 border-gold">
+                    <h3 class="font-brand text-2xl sm:text-3xl text-white mb-6 text-center">For Women</h3>
+                    <ul class="space-y-4 text-gray-300 text-sm sm:text-base">
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Haircut & Styling</span> <span class="font-semibold text-gold">from ₹500</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Global Hair Color</span> <span class="font-semibold text-gold">from ₹2500</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Keratin Treatment</span> <span class="font-semibold text-gold">from ₹3500</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Cleanup / Facial</span> <span class="font-semibold text-gold">from ₹600</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Classic Manicure</span> <span class="font-semibold text-gold">₹400</span></li>
+                        <li class="flex justify-between border-b border-dashed border-slate-600 pb-2"><span>Full Body Waxing</span> <span class="font-semibold text-gold">from ₹1200</span></li>
+                        <li class="flex justify-between pb-2"><span>Bridal Makeup</span> <span class="font-semibold text-gold">Enquire</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <!-- Booking Section -->
-        <section id="booking" class="bg-slate-800 p-8 md:p-12 rounded-2xl shadow-2xl reveal">
+        <section id="booking" class="bg-slate-800 p-6 sm:p-8 md:p-12 rounded-2xl shadow-2xl reveal">
             <div class="text-center">
-                <h2 class="font-brand text-4xl md:text-5xl font-bold mb-3 text-white">Book Your Appointment</h2>
-                <p class="text-gray-400 mb-10 max-w-lg mx-auto">Fill in the details below. We'll redirect you to WhatsApp to confirm your booking request.</p>
+                <h2 class="font-brand text-3xl sm:text-4xl md:text-5xl font-bold mb-3 text-white">Book Your Appointment</h2>
+                <p class="text-gray-400 mb-10 max-w-lg mx-auto text-sm sm:text-base">Fill in the details below. We'll redirect you to WhatsApp to confirm your booking request.</p>
             </div>
             
             <form id="bookingForm" class="max-w-xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
                         <label for="customerName" class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
-                        <input type="text" id="customerName" name="customerName" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:ring-1 ring-gold focus:border-gold transition text-gray-200 placeholder-gray-500" placeholder="e.g., Anjali Sharma" required>
+                        <input type="text" id="customerName" name="customerName" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:ring-1 ring-gold focus:border-gold transition text-gray-200 placeholder-gray-500" placeholder="e.g., Harshit sen" required>
                     </div>
                     <div>
                         <label for="customerPhone" class="block text-sm font-medium text-gray-300 mb-2">Phone Number</label>
@@ -136,16 +177,22 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 mt-20 md:mt-32 border-t border-slate-800">
-        <div class="container mx-auto px-6 py-10 text-center">
-            <p class="font-brand text-3xl mb-3 text-gold">Vishal The Family Salon</p>
-            <p class="mb-4">Behind ShreeNath Electronics, Main Market, Neemuch</p>
-            <p class="mb-6"><a href="tel:+918120376635" class="hover:text-gold transition">+91 81203 76635</a></p>
+        <div class="container mx-auto px-4 sm:px-6 py-10 text-center">
+            <p class="font-brand text-2xl sm:text-3xl mb-3 text-gold">Vishal The Family Salon</p>
+            <p class="mb-4 text-sm sm:text-base">Address 49, Tagore Marg, Behind ShreeNath Electronics, Main Market, Neemuch</p>
+            <div class="mb-6 flex flex-col sm:flex-row sm:flex-wrap items-center justify-center sm:space-x-4 space-y-2 sm:space-y-0 text-sm sm:text-base">
+                <a href="tel:+918120376635" class="hover:text-gold transition">+91 81203 76635</a>
+                <span class="hidden sm:inline text-slate-500">|</span>
+                <a href="tel:+919752192555" class="hover:text-gold transition">+91 97521 92555</a>
+                <span class="hidden sm:inline text-slate-500">|</span>
+               
+            </div>
             <div class="flex justify-center space-x-6 mb-8">
                 <a href="#" class="hover:text-gold transition">Facebook</a>
                 <a href="https://www.instagram.com/vishal_the_family_salon_neemuc/" class="hover:text-gold transition">Instagram</a>
                 <a href="#" class="hover:text-gold transition">Twitter</a>
             </div>
-            <p class="text-sm text-gray-500">&copy; <span id="currentYear"></span> All Rights Reserved. Designed with elegance.</p>
+            <p class="text-xs sm:text-sm text-gray-500">&copy; <span id="currentYear"></span> All Rights Reserved. Designed with elegance.</p>
         </div>
     </footer>
 
